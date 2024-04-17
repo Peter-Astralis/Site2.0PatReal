@@ -365,6 +365,7 @@ nav .fa-solid{
 
     .header-text h1{
         font-size: 50px; /* Reduzir o tamanho do texto para telas menores */
+        margin-top: 50px;
     }
     nav ul  {
         background: rgb(160, 160, 160);
