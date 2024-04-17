@@ -1,0 +1,393 @@
+* {margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    }
+    
+    body {
+        background-color: white;
+        color: #3d3b3a; 
+        padding-bottom: 0px; 
+        position: relative; 
+    }
+    
+    #header {
+    width: 100%;
+    height: 100%;
+    }
+    
+    .container {
+    padding: 10px 10%;
+    margin-left: 0px;
+    }
+    
+    nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 54px;
+    background-color: transparent; 
+    margin-top: 0px;
+    }
+    
+    nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    }
+    
+    nav ul li a {
+    color: #3d3b3a; 
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    }
+    
+    nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #3d3b3a; 
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 1s;
+    }
+    
+    nav ul li a:hover::after {
+    width: 100%;
+    }
+    
+    .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+    }
+    
+    .image-text {
+    display: flex;
+    align-items: center;
+    }
+    
+    .image-text img {
+    max-width: 50%; 
+    margin-right: 2px;
+    margin-top: 100px;
+    width: auto;
+    height: 10px;
+    
+    }
+    
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Alinhamento vertical ajustado */
+        justify-content: center;
+        height: 100%;
+    }
+    .text h2 {
+    font-family: "Martel Sans", sans-serif;
+    font-size: 35px; 
+    margin-left: 48px;
+    margin-top: 100px;
+    margin-bottom: 0px; 
+    font-weight: 300;
+    position: relative; 
+    }
+    .text h2::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    left: -35px;
+    width: 27px; 
+    height: 2px; 
+    background-color: #3d3b3a; 
+    transform: translateY(-50%); 
+    }
+    .text p {
+    margin-top: -70px; 
+    margin-left: 40px;
+    font-size: 20px;
+    
+    }
+    
+    .services-button {
+    background-color: rgba(0, 0, 0, 0.815);
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    }
+    
+    .services-button:hover {
+    
+    transform: scale(1.03); 
+    }
+    
+    #header {
+    position: relative; 
+    }
+    footer {
+        position: relative; 
+        left: 0;
+        bottom: 0;
+        width: 100%; 
+        background-color: #111111f3;
+        color: #fff;
+        padding: 50px 0;
+        margin-top: 432px;
+    }
+    
+    footer .container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 10%;
+    }
+    
+    .footer-block {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .footer-block a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    .footer-block h2 {
+        margin-bottom: 10px;
+        font-family: "Libre Baskerville", serif;
+    }
+    
+    .footer-block p {
+        margin-left: -21px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        color: #ccc;
+        font-family: "Inter", sans-serif;
+    }
+    
+    .footer-block img {
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    
+    .social-icon {
+        margin-top: 6px;
+        margin-left: 10px;
+        transition: transform 0.4s;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.2);
+    }
+    
+    .footer-copyright {
+        position: relative;
+        color: #ccc;
+        font-size: 12px;
+        text-align: right;
+        margin-top: 00px;
+        padding-right: 20px;
+        bottom: -38px; 
+    }
+
+    .me {
+        position: relative;
+        color: #ccc;
+        font-size: 12px;
+        text-align: right;
+        margin-top: 2px;
+        padding-right: 20px;
+        bottom: -38px; 
+    }
+    
+    
+
+    
+
+    nav .fa-solid{
+        display: none;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para telas menores */
+
+@media screen and (max-width: 768px) {
+    footer .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-block {
+        margin-bottom: 30px;
+    }
+
+    #header .container {
+        padding: 10px 5%; 
+    }
+
+    nav {
+        margin-top: 20px; 
+    }
+
+    nav ul {
+        margin-top: 10px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        padding: 10px 5%; 
+        height: 300px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: center; 
+    }
+
+    nav ul {
+        margin-top: 20px; 
+    }
+
+    nav ul li {
+        margin-right: 9px; 
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .logo-container {
+        display: flex;
+        justify-content: space-between; /* Para posicionar a logo e o botão do menu em lados opostos */
+        align-items: center; /* Alinha os itens verticalmente */
+    }
+    
+    .logo {
+        width: 200px; /* Reduz a largura da logo, se necessário */
+        margin-right: 40px;
+    }
+
+    .fa-bars {
+       
+        margin-right: auto; 
+        margin-top: 24px;
+    }
+
+    .header-text h1{
+        font-size: 50px; /* Reduzir o tamanho do texto para telas menores */
+    }
+    nav ul  {
+        background: rgb(160, 160, 160);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        margin-top: 0px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 759px) {
+    .logo-container {
+        display: flex;
+        justify-content: space-between; /* Para posicionar a logo e o botão do menu em lados opostos */
+        align-items: center; /* Alinha os itens verticalmente */
+    }
+    
+    .logo {
+        width: 200px; /* Reduz a largura da logo, se necessário */
+        margin-right: 40px;
+    }
+
+    .fa-bars {
+       
+        margin-right: auto; 
+        margin-top: 34px;
+    }
+
+    .header-text h1{
+        font-size: 50px; /* Reduzir o tamanho do texto para telas menores */
+    }
+    nav ul  {
+        background: rgb(160, 160, 160);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+        margin-top: 0px;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+}
